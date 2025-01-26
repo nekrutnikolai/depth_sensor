@@ -1,6 +1,6 @@
 ## Low-Cost Depth Sensing Module For Deep-Water Instruments
 
-> [!NOTE] Under constructions
+> !Under construction!
 
 A low-cost, durable depth-sensing module capable of providing approximate depth readings for underwater instruments submerged up to 2000 meters. Deliverables will include a fully functional prototype, field-tested for real-world integration.
 
