@@ -1,8 +1,12 @@
 ## Low-Cost Depth Sensing Module For Deep-Water Instruments
 
-![Sensor AI](images/sensor_ai.png)
+<p align="center">
+  <img src="images/sensor_ai.png" width="400">
+</p>
 
-*Above is an AI-generated image of a depth sensor*
+<p align="center">
+  AI-generated image of a depth sensor
+</p>
 
 A low-cost, durable depth-sensing module capable of providing approximate depth readings for underwater instruments submerged up to 2000 meters. Deliverables will include a fully functional prototype, field-tested for real-world integration.
 
