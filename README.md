@@ -1,7 +1,7 @@
 ## Low-Cost Depth Sensing Module For Deep-Water Instruments
 
 <p align="center">
-  <img src="images/sensor_ai.png" width="400">
+  <img src="images/sensor_ai.png" width="400" style="border-radius: 8px;">
 </p>
 
 <p align="center">
@@ -15,6 +15,41 @@ A low-cost, durable depth-sensing module capable of providing approximate depth 
 ### Introduction
 
 This project addresses the challenge of developing a cost-effective depth sensor for intermediate to deep depths (up to 2000 meters). Existing solutions are either prohibitively expensive or unsuitable for these depths. In collaboration with Dr. V. Hunter Adams (Cornell ECE) and Jonathan Pfeifer (WHOI), this effort focuses on creating a robust, affordable sensor module designed for integration with underwater exploration vessels. The sensor balances practical accuracy with resilience to high-pressure underwater environments, supporting WHOI’s marine research with an innovative and accessible solution.
+
+### Updates
+
+Designed PCB schematic found in /depth_sensor_KiCad as per image below:
+
+<p align="center">
+  <img src="images/sensor_schematic.jpg" width="600" style="border-radius: 8px;">
+</p>
+
+<p align="center">
+  Image of schematic
+</p>
+
+
+Wrote program to output ADC data over serial and to a real-time plotter program on my computer where I was measuring the voltage from a potentiometer. This program will serve as a good way to characterize the future hall-effect sensors.
+
+
+<p align="center">
+  <img src="images/adc_readout.png" width="400" style="border-radius: 8px;">
+</p>
+
+<p align="center">
+  Live plot of ADC plotter
+</p>
+
+
+<p align="center">
+  <img src="images/adc_setup.jpg" width="400" style="border-radius: 8px;">
+</p>
+
+<p align="center">
+  Breadboard setup of potentiometer
+</p>
+
+<!-- Components have arrived but turns out that I received the wrong ones: -->
 
 ### Specifications to Meet
 
