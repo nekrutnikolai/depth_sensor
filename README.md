@@ -18,6 +18,10 @@ This project addresses the challenge of developing a cost-effective depth sensor
 
 ### Updates
 
+Compressible Fluids Research: https://hackmd.io/@nekrutnikolai/rJiTfUMA0
+
+We decided to initially move forward with an approach that utilizes the linear compressibility of liquids, such as sea water, under high pressure. These linearly compressible liquids, such as water or ethanol exhibit an interesting property where their change in volume is linear with respect to pressure rather than a 1/x relationship. The change in volume at a depth of 2000m, which is a pressure of 200 atm is approximately 1% less than atmospheric volume. The prototype will work by having a piston composed of a magnet that moves as the fluid is compressed more and more at greater depths. The position of the magnet is to be determined precisely by using a linear array of hall effect sensors as this is a non-invaise way to measure the position of the magnet.
+
 Designed PCB schematic found in /depth_sensor_KiCad as per image below:
 
 <p align="center">
