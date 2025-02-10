@@ -8,6 +8,14 @@
   AI-generated image of a depth sensor
 </p>
 
+<p align="center">
+  <img src="images/sensor_sketch.png" width="600" style="border-radius: 8px;">
+</p>
+
+<p align="center">
+  Or here's what the current prototype will look like
+</p>
+
 A low-cost, durable depth-sensing module capable of providing approximate depth readings for underwater instruments submerged up to 2000 meters. Deliverables will include a fully functional prototype, field-tested for real-world integration.
 
 > in Partial Fulfillment of the Requirements for the Degree of Master of Engineering, Electrical and Computer Engineering at Cornell University
