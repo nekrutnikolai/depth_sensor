@@ -26,9 +26,51 @@ This project addresses the challenge of developing a cost-effective depth sensor
 
 ### Updates
 
-Compressible fluids research: https://hackmd.io/@nekrutnikolai/rJiTfUMA0
+> Recent on top and older on bottom
 
-We decided to initially move forward with an approach that utilizes the linear compressibility of liquids, such as sea water, under high pressure. These linearly compressible liquids, such as water or ethanol exhibit an interesting property where their change in volume is linear with respect to pressure rather than a 1/x relationship. The change in volume at a depth of 2000m, which is a pressure of 200 atm is approximately 1% less than atmospheric volume. The prototype will work by having a piston composed of a magnet that moves as the fluid is compressed more and more at greater depths. The position of the magnet is to be determined precisely by using a linear array of hall effect sensors as this is a non-invaise way to measure the position of the magnet.
+#### Calculating number of hall effect sensors
+
+> Feb 2025
+
+The specification is to be able to work across the 2000m range with a resolution of +/- 10m. 
+
+Thus, the minimum resultion we need to have is 2000m / 10m = 200 points.
+
+From [this article](https://pico-adc.markomo.me/ENOB/), the effective bits of the Pi Pico ADC is approximatle **8.8 bits**.
+
+With a conservative estimate, this is around 2 ^ 8.8 ~ 400 discrete values not affected by noise internal to the ADC
+
+As we can see, even having one hall effect sensor would be enough and would get us to within 5m resolution. 
+
+Since there are three ADCs available on the Pi Pico and the Hall Effect sensors are quite inexpensive, why not utilize three three hall effect sensors for approximately a 3 * 400 ~ 1200 point resolution. For the range of 2000m, this leads to a precision of about 1.67m.
+
+Going beyond that has little benefit
+
+#### Acquiring and plotting live ADC data
+
+> Jan 2025
+
+Wrote program to output ADC data over serial and to a real-time plotter program on my computer where I was measuring the voltage from a potentiometer. This program will serve as a good way to characterize the future hall-effect sensors.
+
+<p align="center">
+  <img src="images/adc_readout.png" width="400" style="border-radius: 8px;">
+</p>
+
+<p align="center">
+  Live plot of ADC plotter
+</p>
+
+<p align="center">
+  <img src="images/adc_setup.jpg" width="400" style="border-radius: 8px;">
+</p>
+
+<p align="center">
+  Breadboard setup of potentiometer
+</p>
+
+#### Initial PCB design
+
+> Nov 2024
 
 Designed PCB schematic found in /depth_sensor_KiCad as per image below:
 
@@ -41,25 +83,13 @@ Designed PCB schematic found in /depth_sensor_KiCad as per image below:
 </p>
 
 
-Wrote program to output ADC data over serial and to a real-time plotter program on my computer where I was measuring the voltage from a potentiometer. This program will serve as a good way to characterize the future hall-effect sensors.
+#### Exploring physical mechanisms with which to measure pressure
 
+> Oct 2024
 
-<p align="center">
-  <img src="images/adc_readout.png" width="400" style="border-radius: 8px;">
-</p>
+Compressible fluids research: https://hackmd.io/@nekrutnikolai/rJiTfUMA0
 
-<p align="center">
-  Live plot of ADC plotter
-</p>
-
-
-<p align="center">
-  <img src="images/adc_setup.jpg" width="400" style="border-radius: 8px;">
-</p>
-
-<p align="center">
-  Breadboard setup of potentiometer
-</p>
+We decided to initially move forward with an approach that utilizes the linear compressibility of liquids, such as sea water, under high pressure. These linearly compressible liquids, such as water or ethanol exhibit an interesting property where their change in volume is linear with respect to pressure rather than a 1/x relationship. The change in volume at a depth of 2000m, which is a pressure of 200 atm is approximately 1% less than atmospheric volume. The prototype will work by having a piston composed of a magnet that moves as the fluid is compressed more and more at greater depths. The position of the magnet is to be determined precisely by using a linear array of hall effect sensors as this is a non-invaise way to measure the position of the magnet.
 
 <!-- Components have arrived but turns out that I received the wrong ones: -->
 
