@@ -32,13 +32,21 @@ int main() {
     printf("Beep boop, listening...\n");
 
     adc_init();
-    adc_gpio_init(ADC_PIN);
-    adc_select_input(ADC_NUM);
+
+    // Initialize GPIO pins for ADC0, ADC1, and ADC2
+    for (int adc_num = 0; adc_num < 3; adc_num++) {
+        adc_gpio_init(26 + adc_num);
+    }
 
     uint adc_raw;
     while (1) {
-        adc_raw = adc_read(); // raw voltage from ADC
-        printf("%.2f\n", adc_raw * ADC_CONVERT);
+        for (int adc_num = 0; adc_num < 3; adc_num++) {
+            adc_select_input(adc_num); // Select the ADC input
+            adc_raw = adc_read();     // Read raw voltage from ADC
+            // printf("ADC%d: %.2f V\n", adc_num, adc_raw * ADC_CONVERT);
+            printf("ADC%d: %d\n", adc_num, adc_raw);
+            // printf("Serial test OK\n");
+        }
         sleep_ms(10);
     }
 }

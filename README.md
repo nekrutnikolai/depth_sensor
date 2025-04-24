@@ -28,6 +28,15 @@ This project addresses the challenge of developing a cost-effective depth sensor
 
 > Recent on top and older on bottom
 
+#### Potential epoxy options
+
+> Mar 2025
+
+We need ~ 100ml of epoxy to encapsulate electronics and custom break out Pi Pico.
+
+
+
+
 #### Calculating number of hall effect sensors
 
 > Feb 2025
