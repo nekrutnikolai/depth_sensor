@@ -91,8 +91,8 @@
 		(at 172 94 -90)
 		(descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
-		(property "Reference" "U2"
-			(at 0 -2.4 90)
+		(property "Reference" "HE1"
+			(at 2.95 0 0)
 			(layer "F.SilkS")
 			(uuid "6d7ec825-49f3-4247-b302-ba8b62a42b78")
 			(effects
@@ -102,7 +102,7 @@
 				)
 			)
 		)
-		(property "Value" "DRV5055A3xDBZxQ1"
+		(property "Value" "ADC 1"
 			(at 0 2.4 90)
 			(layer "F.Fab")
 			(uuid "f08135f3-7e35-411e-9804-7bed8876e655")
@@ -358,8 +358,8 @@
 		(at 184 90.575 -90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
-		(property "Reference" "C3"
-			(at 0 -1.43 90)
+		(property "Reference" "C0"
+			(at -0.475 -1.9 0)
 			(layer "F.SilkS")
 			(uuid "35b8a87a-d426-49cc-a9bb-bf0ca0500302")
 			(effects
@@ -370,7 +370,7 @@
 			)
 		)
 		(property "Value" "0.01u"
-			(at 0 1.43 90)
+			(at 1.225 2.8 90)
 			(layer "F.Fab")
 			(uuid "f00a209c-a5dc-4e8d-a0a4-c38aab25fcdd")
 			(effects
@@ -571,8 +571,8 @@
 		(at 160 90.575 -90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
-		(property "Reference" "C1"
-			(at 0 -1.43 -90)
+		(property "Reference" "C2"
+			(at 0.075 -2.15 0)
 			(layer "F.SilkS")
 			(uuid "5626ae61-0a31-4d0b-a3e2-7fcffaee6d63")
 			(effects
@@ -583,7 +583,7 @@
 			)
 		)
 		(property "Value" "0.01u"
-			(at 0 1.43 -90)
+			(at 0.925 -3.9 90)
 			(layer "F.Fab")
 			(uuid "06cb439d-7b80-4b01-8172-2669305b88cb")
 			(effects
@@ -738,7 +738,7 @@
 			(uuid "7fcedd9f-b4fa-4cba-91f6-328cea5a1eca")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 -90)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "f5f1fb3d-7f65-4e1d-963a-d82aba05efbd")
 			(effects
@@ -784,8 +784,8 @@
 		(at 160 94 -90)
 		(descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
-		(property "Reference" "U3"
-			(at 0 -2.4 90)
+		(property "Reference" "HE2"
+			(at 2.95 0 0)
 			(layer "F.SilkS")
 			(uuid "9049b80d-3e76-4dfe-8e2d-96f4a3dbb7a5")
 			(effects
@@ -795,7 +795,7 @@
 				)
 			)
 		)
-		(property "Value" "DRV5055A3xDBZxQ1"
+		(property "Value" "ADC 2"
 			(at 0 2.4 90)
 			(layer "F.Fab")
 			(uuid "d5dae6c6-4f5c-4471-87d6-1238cab19ddf")
@@ -1051,8 +1051,8 @@
 		(at 172 90.6 -90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
-		(property "Reference" "C2"
-			(at 0 -1.43 90)
+		(property "Reference" "C1"
+			(at 0.1 -2.1 0)
 			(layer "F.SilkS")
 			(uuid "c3459f78-27c0-416c-a748-ead88a668528")
 			(effects
@@ -1063,7 +1063,7 @@
 			)
 		)
 		(property "Value" "0.01u"
-			(at 0 1.43 90)
+			(at 1.2 -3.85 90)
 			(layer "F.Fab")
 			(uuid "f512db0f-4760-43f3-8dd3-f2cbf65bc679")
 			(effects
@@ -1266,6 +1266,7 @@
 			(at -3.5 -0.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "6f0586e2-c960-404b-8d6a-25f2dc957195")
 			(effects
 				(font
@@ -1403,8 +1404,8 @@
 		(at 184 94 -90)
 		(descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
-		(property "Reference" "U1"
-			(at 0 -2.4 90)
+		(property "Reference" "HE0"
+			(at 3 0 0)
 			(layer "F.SilkS")
 			(uuid "eafb3c76-d907-409b-a8d5-24b29baa20be")
 			(effects
@@ -1414,9 +1415,10 @@
 				)
 			)
 		)
-		(property "Value" "DRV5055A3xDBZxQ1"
+		(property "Value" "ADC 0"
 			(at 0 2.4 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "4dc06cbe-9171-4350-9756-74b6ad676a98")
 			(effects
 				(font
